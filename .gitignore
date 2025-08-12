@@ -1,0 +1,616 @@
+# CyberForge .gitignore
+# Comprehensive exclusion for production cybersecurity platform
+
+# Environment and Configuration Files
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+*.env
+config/local.py
+config/production.py
+secrets/
+credentials/
+keys/
+
+# SSL and Security Files
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+ssl/
+certificates/
+cyberforge/
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+postgres_data/
+redis_data/
+prometheus_data/
+grafana_data/
+
+# Logs and Debug Files
+logs/
+*.log
+*.log.*
+debug.log
+error.log
+access.log
+nginx.log
+
+# Backups
+backups/
+*.sql
+*.dump
+*.backup
+*.bak
+
+# Docker and Container Files
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+*.tar
+*.tar.gz
+*.tar.bz2
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Build Outputs
+build/
+dist/
+out/
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
+*.cache
+.cache/
+tmp/
+temp/
+
+# Test Coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Production Specific
+/opt/cyberforge/
+/etc/ssl/cyberforge/
+deployment-info.txt
+production-credentials.txt
+
+# Monitoring and Metrics
+monitoring/alerts.yml
+monitoring/dashboards/
+*.yml.bak
+
+# User Data
+user_data/
+uploads/
+downloads/
+temp_uploads/
+
+# API Keys and Tokens
+api_keys.txt
+tokens.txt
+secrets.txt
+
+# Backup Scripts
+backup_*.sh
+restore_*.sh
+
+# System Files
+*.pid
+*.lock
+*.socket
+*.service
+systemd/
+
+# Network Configuration
+network/
+interfaces/
+hosts.bak
+
+# Firewall Rules
+ufw/
+iptables/
+firewall/
+
+# Fail2ban
+fail2ban/
+jail.local
+
+# Performance and Profiling
+*.prof
+*.profile
+*.trace
+py-spy/
+memory-profiler/
+
+# Documentation Build
+docs/_build/
+docs/build/
+site/
+
+# Package Files
+*.deb
+*.rpm
+*.zip
+*.tar.gz
+*.tar.bz2
+
+# Local Development
+local/
+dev/
+development/
+staging/
+
+# Production Artifacts
+production/
+prod/
+deploy/
+deployment/
+
+# Monitoring Data
+prometheus_data/
+grafana_data/
+alertmanager_data/
+
+# Backup Storage
+backup_storage/
+cloud_backups/
+external_backups/
+
+# Security Scans
+security_scan/
+vulnerability_scan/
+penetration_test/
+
+# Compliance and Audit
+compliance/
+audit/
+reports/
+certificates/
+
+# Performance Testing
+performance_tests/
+load_tests/
+stress_tests/
+benchmarks/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+jenkins/
+pipeline/
+
+# Dependencies
+vendor/
+dependencies/
+external/
+
+# Custom Scripts
+scripts/
+tools/
+utilities/
+
+# Documentation
+*.md.bak
+*.txt.bak
+docs.bak/
+
+# Archive Files
+*.7z
+*.rar
+*.zip
+*.tar
+*.gz
+*.bz2
+*.xz
+
+# Binary Files
+*.exe
+*.bin
+*.app
+*.dmg
+*.pkg
+
+# Media Files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# Image Files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.ico
+*.webp
+
+# Office Documents
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.pdf
+*.odt
+*.ods
+*.odp
+
+# Compressed Archives
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+
+# Database Dumps
+*.sql
+*.dump
+*.backup
+*.bak
+*.db
+*.sqlite
+*.sqlite3
+
+# Log Files
+*.log
+*.log.*
+*.out
+*.err
+*.access
+*.error
+
+# Temporary Files
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*~
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# IDE Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build Artifacts
+build/
+dist/
+target/
+out/
+bin/
+obj/
+
+# Package Managers
+node_modules/
+vendor/
+.venv/
+env/
+venv/
+
+# Configuration Overrides
+config.local.py
+settings.local.py
+.env.local
+.env.production.local
+
+# Test Files
+test_results/
+coverage/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Documentation Build
+docs/_build/
+site/
+public/
+
+# Backup and Recovery
+backups/
+snapshots/
+checkpoints/
+restore/
+
+# Monitoring and Logging
+logs/
+metrics/
+alerts/
+dashboards/
+
+# Security and Compliance
+audit/
+compliance/
+reports/
+certificates/
+keys/
+secrets/
+
+# Performance and Optimization
+profiles/
+traces/
+benchmarks/
+performance/
+
+# Development Tools
+tools/
+scripts/
+utilities/
+helpers/
+
+# External Dependencies
+external/
+third_party/
+libs/
+packages/
+
+# Archive and Old Files
+archive/
+old/
+deprecated/
+legacy/
+
+# User Generated Content
+uploads/
+downloads/
+user_data/
+content/
+
+# API and Integration
+api_keys/
+tokens/
+webhooks/
+integrations/
+
+# Backup and Storage
+storage/
+backup_storage/
+cloud_storage/
+external_storage/
+
+# Network and Security
+network_config/
+security_config/
+firewall_rules/
+vpn_config/
+
+# Monitoring and Alerting
+monitoring_config/
+alerting_config/
+dashboard_config/
+metric_config/
+
+# Performance and Scaling
+scaling_config/
+performance_config/
+optimization_config/
+tuning_config/
+
+# Compliance and Governance
+compliance_config/
+governance_config/
+policy_config/
+audit_config/
+
+# Disaster Recovery
+recovery_config/
+backup_config/
+restore_config/
+failover_config/
+
+# High Availability
+ha_config/
+clustering_config/
+load_balancer_config/
+replication_config/
+
+# Security Hardening
+hardening_config/
+security_policies/
+access_controls/
+encryption_config/
+
+# Monitoring and Observability
+observability_config/
+tracing_config/
+logging_config/
+metrics_config/
+
+# Performance Optimization
+optimization_config/
+caching_config/
+compression_config/
+acceleration_config/
+
+# Scalability and Growth
+scaling_config/
+growth_config/
+expansion_config/
+capacity_config/
+
+# Maintenance and Operations
+maintenance_config/
+operations_config/
+deployment_config/
+release_config/
+
+# Testing and Quality Assurance
+testing_config/
+qa_config/
+validation_config/
+verification_config/
+
+# Documentation and Knowledge
+documentation_config/
+knowledge_config/
+wiki_config/
+help_config/
+
+# Support and Troubleshooting
+support_config/
+troubleshooting_config/
+debug_config/
+diagnostic_config/
+
+# Training and Education
+training_config/
+education_config/
+learning_config/
+certification_config/
+
+# Community and Collaboration
+community_config/
+collaboration_config/
+team_config/
+project_config/
+
+# Innovation and Research
+innovation_config/
+research_config/
+experiment_config/
+prototype_config/
+
+# Future Planning
+roadmap_config/
+planning_config/
+strategy_config/
+vision_config/
