@@ -2,7 +2,7 @@
 
 A modern, cost-effective cybersecurity lab platform that provides on-demand access to security tools through web browsers. Deploy containers for malware analysis, dark web research, and security testing with automatic cleanup to optimize costs.
 
-## 🚀 Features
+##  Features
 
 - **Instant Container Access**: Launch security tools in seconds through your browser
 - **Cost Optimization**: Automatic container cleanup after inactivity
@@ -11,7 +11,7 @@ A modern, cost-effective cybersecurity lab platform that provides on-demand acce
 - **Admin Dashboard**: Comprehensive monitoring and user management
 - **Security Tools**: Pre-configured images for Kali Linux, Chrome, Tor, Brave, and more
 
-## 🛠️ Available Tools
+##  Available Tools
 
 - **Kali Linux**: Purple and main editions for penetration testing
 - **Web Browsers**: Chrome, Brave, Tor for safe browsing and dark web access
@@ -19,7 +19,7 @@ A modern, cost-effective cybersecurity lab platform that provides on-demand acce
 - **Telegram**: Secure messaging analysis tools
 - **Custom Images**: Easy to add new security tools
 
-## 🏗️ Architecture
+##  Architecture
 
 - **Backend**: FastAPI (Python) with async container management
 - **Frontend**: React + TypeScript with Material-UI
@@ -27,7 +27,7 @@ A modern, cost-effective cybersecurity lab platform that provides on-demand acce
 - **Container Engine**: Docker with resource constraints
 - **Authentication**: JWT-based secure user sessions
 
-## 🚀 **Quick Start**
+##  **Quick Start**
 
 1. **Clone and Setup:**
    ```bash
@@ -53,7 +53,7 @@ A modern, cost-effective cybersecurity lab platform that provides on-demand acce
    - **Admin:** `admin` / `admin123`
    - **User:** `john` / `user123` or `jane` / `user123`
 
-## 🐳 **Container Management**
+##  **Container Management**
 
 ### **Available Tools:**
 - **Kali Linux Rolling** - Full penetration testing suite
@@ -75,21 +75,21 @@ A modern, cost-effective cybersecurity lab platform that provides on-demand acce
 
 ### **Why Selenium Containers?**
 Selenium containers provide **isolated, safe web browsing** for:
-- 🕵️ **Web scraping** and analysis
-- 🧪 **Security testing** of websites
-- 🔍 **Malware analysis** in safe environment
-- 📊 **Data collection** from web sources
-- 🚫 **Testing suspicious URLs** safely
+-  **Web scraping** and analysis
+-  **Security testing** of websites
+-  **Malware analysis** in safe environment
+-  **Data collection** from web sources
+-  **Testing suspicious URLs** safely
 
 ### **Connection Types:**
 
-#### **🌐 VNC Access (Recommended):**
+#### ** VNC Access (Recommended):**
 - **Port:** 7900 (Selenium) vs 5900 (Regular)
 - **URL:** Automatically generated
 - **Features:** Full browser control, mouse/keyboard
 - **Use Case:** Interactive web browsing and testing
 
-#### **💻 SSH Access:**
+#### ** SSH Access:**
 - **Port:** 22
 - **Command:** Automatically generated
 - **Features:** Terminal access for automation
@@ -97,21 +97,21 @@ Selenium containers provide **isolated, safe web browsing** for:
 
 ### **Troubleshooting Selenium:**
 
-#### **❌ "Connection Reset" Error:**
+#### ** "Connection Reset" Error:**
 **Cause:** Wrong VNC port or container not ready
 **Solution:** 
 1. Wait for container to fully start (status: "running")
 2. Use VNC connection (not SSH)
 3. Check if popup blocker is enabled
 
-#### **🌐 VNC Not Opening:**
+#### ** VNC Not Opening:**
 **Solutions:**
 1. **Allow popups** for your domain
 2. **Check container status** - must be "running"
 3. **Try different browser** (Chrome, Firefox, Edge)
 4. **Clear browser cache** and cookies
 
-#### **📱 Browser Not Responding:**
+#### ** Browser Not Responding:**
 **Solutions:**
 1. **Wait longer** - Selenium containers take time to initialize
 2. **Refresh VNC connection** - close and reopen
@@ -124,7 +124,7 @@ Selenium containers provide **isolated, safe web browsing** for:
 4. **Stop containers** when not in use
 5. **Monitor resource usage** to prevent overload
 
-## 💰 **Resource Allocation**
+##  **Resource Allocation**
 
 | Container Type | CPU | RAM | Storage | Notes |
 |----------------|-----|-----|---------|-------|
@@ -133,7 +133,7 @@ Selenium containers provide **isolated, safe web browsing** for:
 | **Ubuntu** | 1 core | 2GB | 15GB | Custom tools |
 | **Tor Browser** | 1 core | 1GB | 5GB | Anonymous browsing |
 
-## 🔒 **Security Features**
+##  **Security Features**
 
 - **Container Isolation** - Each container runs in isolated network
 - **Resource Limits** - CPU, RAM, and storage constraints
@@ -142,7 +142,7 @@ Selenium containers provide **isolated, safe web browsing** for:
 - **User Limits** - Max 2 concurrent containers per user
 - **Audit Logging** - Track all container operations
 
-## 🚀 **Deployment Options**
+##  **Deployment Options**
 
 ### **Local Development:**
 ```bash
@@ -159,7 +159,7 @@ sudo docker-compose -f docker-compose-https.yml up -d
 - **Google Cloud:** Use Compute Engine with firewall rules
 - **Azure:** Use VM with network security groups
 
-## 🆘 **Troubleshooting**
+##  **Troubleshooting**
 
 ### **Common Issues:**
 
@@ -194,7 +194,7 @@ sudo docker-compose exec redis redis-cli ping
 - **Monitor resource usage** with `docker stats`
 - **Limit concurrent containers** per user
 
-## 📚 **Advanced Usage**
+##  **Advanced Usage**
 
 ### **Custom Container Images:**
 ```dockerfile
@@ -217,7 +217,7 @@ curl -X POST http://localhost:8000/api/containers \
 - **User activity monitoring**
 - **Cost optimization alerts**
 
-## 🤝 **Support & Contributing**
+##  **Support & Contributing**
 
 - **Issues:** Report bugs and feature requests
 - **Documentation:** Help improve guides and examples
