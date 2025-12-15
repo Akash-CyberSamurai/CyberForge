@@ -29,9 +29,9 @@ A modern, cost-effective cybersecurity lab platform that provides on-demand acce
 
 ##  **Quick Start**
 
-1. **Clone and Setup:**
+1. **Clone and Setup:** 
    ```bash
-   git clone <your-repo>
+   git clone git clone https://github.com/Akash-CyberSamurai/CyberForge.git
    cd cyberlab
    ```
 
